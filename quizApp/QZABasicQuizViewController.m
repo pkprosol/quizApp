@@ -81,11 +81,14 @@
 - (void)handleResponseFromTextField:(UITextField *)textField WithAnswer:(NSString *)answer
 {
     if ([QZACheckAnswer checkIfResponseCorrect:textField.text ForAnswer:answer]) {
-        [QZAAlertViewManager popAlertViewWithTitle:@"Correct!" AndMessage:@"Nice job"];
+        UIAlertView *successAlert = [QZAAlertViewManager popAlertViewWithTitle:@"Correct!" AndMessage:@"Nice job"];
+        [successAlert show];
         // [self handleWinWithPoints:10];
         // [self.NSNumberPIResponse becomeFirstResponder];
     } else {
-        [QZAAlertViewManager popAlertViewWithTitle:@"Incorrect" AndMessage:@"Try again!"];
+        UIAlertView *failureAlert = [QZAAlertViewManager popAlertViewWithTitle:@"Incorrect" AndMessage:@"Try again!"];
+        [failureAlert show];
+
         // [textField becomeFirstResponder];
     }
     // [textField resignFirstResponder];
