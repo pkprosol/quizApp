@@ -1,0 +1,13 @@
+PODS:
+  - AnimatedGif (0.1.1)
+  - Gamify (0.2.0)
+
+DEPENDENCIES:
+  - AnimatedGif
+  - Gamify
+
+SPEC CHECKSUMS:
+  AnimatedGif: 02960d34d11eb52a154fbf876ebc584a0fe26442
+  Gamify: aecbdaaa01129a08216d72317bef955818888318
+
+COCOAPODS: 0.33.1

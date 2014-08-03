@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FADBBDB1EE14C4DBD1DCA28 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 009F8C45F4B040ECB7A9C82A /* libPods.a */; };
+		F45B77D0198ADEF200DE7AAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45B77CF198ADEF200DE7AAD /* Foundation.framework */; };
+		F45B77D2198ADEF200DE7AAD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45B77D1198ADEF200DE7AAD /* CoreGraphics.framework */; };
+		F45B77D4198ADEF200DE7AAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45B77D3198ADEF200DE7AAD /* UIKit.framework */; };
+		F45B77D6198ADEF200DE7AAD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45B77D5198ADEF200DE7AAD /* CoreData.framework */; };
+		F45B77DC198ADEF200DE7AAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F45B77DA198ADEF200DE7AAD /* InfoPlist.strings */; };
+		F45B77DE198ADEF200DE7AAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B77DD198ADEF200DE7AAD /* main.m */; };
+		F45B77E2198ADEF200DE7AAD /* QZAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B77E1198ADEF200DE7AAD /* QZAAppDelegate.m */; };
+		F45B77E5198ADEF200DE7AAD /* quizApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F45B77E3198ADEF200DE7AAD /* quizApp.xcdatamodeld */; };
+		F45B77E7198ADEF200DE7AAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45B77E6198ADEF200DE7AAD /* Images.xcassets */; };
+		F45B77EE198ADEF300DE7AAD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45B77ED198ADEF300DE7AAD /* XCTest.framework */; };
+		F45B77EF198ADEF300DE7AAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45B77CF198ADEF200DE7AAD /* Foundation.framework */; };
+		F45B77F0198ADEF300DE7AAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45B77D3198ADEF200DE7AAD /* UIKit.framework */; };
+		F45B77F1198ADEF300DE7AAD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45B77D5198ADEF200DE7AAD /* CoreData.framework */; };
+		F45B77F9198ADEF300DE7AAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F45B77F7198ADEF300DE7AAD /* InfoPlist.strings */; };
+		F45B77FB198ADEF300DE7AAD /* quizAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B77FA198ADEF300DE7AAD /* quizAppTests.m */; };
+		F45B7805198ADF0700DE7AAD /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45B7804198ADF0700DE7AAD /* Storyboard.storyboard */; };
+		F45B7808198ADFC400DE7AAD /* QZABasicQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B7807198ADFC400DE7AAD /* QZABasicQuizViewController.m */; };
+		F45B780B198AE1CC00DE7AAD /* QZACheckAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B780A198AE1CC00DE7AAD /* QZACheckAnswer.m */; };
+		F490D2A2198AEDAA001BAF2C /* apple.gif in Resources */ = {isa = PBXBuildFile; fileRef = F490D2A1198AEDAA001BAF2C /* apple.gif */; };
+		F490D3CE198DE30B001BAF2C /* QZASwipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3CD198DE30B001BAF2C /* QZASwipeTableViewController.m */; };
+		F490D3D1198DE44C001BAF2C /* QZAQuestionAndAnswers.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3D0198DE44C001BAF2C /* QZAQuestionAndAnswers.m */; };
+		F490D3D4198DE4C8001BAF2C /* QZAGenerateQandA.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3D3198DE4C8001BAF2C /* QZAGenerateQandA.m */; };
+		F490D3D7198E1A85001BAF2C /* QZAAlertViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3D6198E1A85001BAF2C /* QZAAlertViewManager.m */; };
+		F490D3DA198E2A69001BAF2C /* QZARewardsOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3D9198E2A69001BAF2C /* QZARewardsOptions.m */; };
+		F490D3DD198E2C2F001BAF2C /* QZADogeOutcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3DC198E2C2F001BAF2C /* QZADogeOutcomeViewController.m */; };
+		F490D3DF198E2CFA001BAF2C /* doge.png in Resources */ = {isa = PBXBuildFile; fileRef = F490D3DE198E2CFA001BAF2C /* doge.png */; };
+		F490D3E2198E3DFB001BAF2C /* QZAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3E1198E3DFB001BAF2C /* QZAWebViewController.m */; };
+		F4C257A6198E437600368203 /* QZAFacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C257A5198E437600368203 /* QZAFacebookViewController.m */; };
+		F4C257A9198E476500368203 /* QZASelectCellsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C257A8198E476500368203 /* QZASelectCellsTableViewController.m */; };
+		F4C257AC198E55D200368203 /* QZAPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C257AB198E55D200368203 /* QZAPickerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F45B77F2198ADEF300DE7AAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F45B77C4198ADEF200DE7AAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F45B77CB198ADEF200DE7AAD;
+			remoteInfo = quizApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		009F8C45F4B040ECB7A9C82A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		383A081F7CB044BFA2F67656 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F45B77CC198ADEF200DE7AAD /* quizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45B77CF198ADEF200DE7AAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F45B77D1198ADEF200DE7AAD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F45B77D3198ADEF200DE7AAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F45B77D5198ADEF200DE7AAD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F45B77D9198ADEF200DE7AAD /* quizApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "quizApp-Info.plist"; sourceTree = "<group>"; };
+		F45B77DB198ADEF200DE7AAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F45B77DD198ADEF200DE7AAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F45B77DF198ADEF200DE7AAD /* quizApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quizApp-Prefix.pch"; sourceTree = "<group>"; };
+		F45B77E0198ADEF200DE7AAD /* QZAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QZAAppDelegate.h; sourceTree = "<group>"; };
+		F45B77E1198ADEF200DE7AAD /* QZAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QZAAppDelegate.m; sourceTree = "<group>"; };
+		F45B77E4198ADEF200DE7AAD /* quizApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = quizApp.xcdatamodel; sourceTree = "<group>"; };
+		F45B77E6198ADEF200DE7AAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F45B77EC198ADEF300DE7AAD /* quizAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quizAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45B77ED198ADEF300DE7AAD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F45B77F6198ADEF300DE7AAD /* quizAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "quizAppTests-Info.plist"; sourceTree = "<group>"; };
+		F45B77F8198ADEF300DE7AAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F45B77FA198ADEF300DE7AAD /* quizAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quizAppTests.m; sourceTree = "<group>"; };
+		F45B7804198ADF0700DE7AAD /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		F45B7806198ADFC400DE7AAD /* QZABasicQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZABasicQuizViewController.h; sourceTree = "<group>"; };
+		F45B7807198ADFC400DE7AAD /* QZABasicQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZABasicQuizViewController.m; sourceTree = "<group>"; };
+		F45B7809198AE1CC00DE7AAD /* QZACheckAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZACheckAnswer.h; sourceTree = "<group>"; };
+		F45B780A198AE1CC00DE7AAD /* QZACheckAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZACheckAnswer.m; sourceTree = "<group>"; };
+		F490D2A1198AEDAA001BAF2C /* apple.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = apple.gif; sourceTree = "<group>"; };
+		F490D3CC198DE30B001BAF2C /* QZASwipeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZASwipeTableViewController.h; sourceTree = "<group>"; };
+		F490D3CD198DE30B001BAF2C /* QZASwipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZASwipeTableViewController.m; sourceTree = "<group>"; };
+		F490D3CF198DE44C001BAF2C /* QZAQuestionAndAnswers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZAQuestionAndAnswers.h; sourceTree = "<group>"; };
+		F490D3D0198DE44C001BAF2C /* QZAQuestionAndAnswers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZAQuestionAndAnswers.m; sourceTree = "<group>"; };
+		F490D3D2198DE4C8001BAF2C /* QZAGenerateQandA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZAGenerateQandA.h; sourceTree = "<group>"; };
+		F490D3D3198DE4C8001BAF2C /* QZAGenerateQandA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZAGenerateQandA.m; sourceTree = "<group>"; };
+		F490D3D5198E1A85001BAF2C /* QZAAlertViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZAAlertViewManager.h; sourceTree = "<group>"; };
+		F490D3D6198E1A85001BAF2C /* QZAAlertViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZAAlertViewManager.m; sourceTree = "<group>"; };
+		F490D3D8198E2A69001BAF2C /* QZARewardsOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZARewardsOptions.h; sourceTree = "<group>"; };
+		F490D3D9198E2A69001BAF2C /* QZARewardsOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZARewardsOptions.m; sourceTree = "<group>"; };
+		F490D3DB198E2C2F001BAF2C /* QZADogeOutcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZADogeOutcomeViewController.h; sourceTree = "<group>"; };
+		F490D3DC198E2C2F001BAF2C /* QZADogeOutcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZADogeOutcomeViewController.m; sourceTree = "<group>"; };
+		F490D3DE198E2CFA001BAF2C /* doge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doge.png; sourceTree = "<group>"; };
+		F490D3E0198E3DFB001BAF2C /* QZAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZAWebViewController.h; sourceTree = "<group>"; };
+		F490D3E1198E3DFB001BAF2C /* QZAWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZAWebViewController.m; sourceTree = "<group>"; };
+		F4C257A4198E437600368203 /* QZAFacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZAFacebookViewController.h; sourceTree = "<group>"; };
+		F4C257A5198E437600368203 /* QZAFacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZAFacebookViewController.m; sourceTree = "<group>"; };
+		F4C257A7198E476500368203 /* QZASelectCellsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZASelectCellsTableViewController.h; sourceTree = "<group>"; };
+		F4C257A8198E476500368203 /* QZASelectCellsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZASelectCellsTableViewController.m; sourceTree = "<group>"; };
+		F4C257AA198E55D200368203 /* QZAPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZAPickerViewController.h; sourceTree = "<group>"; };
+		F4C257AB198E55D200368203 /* QZAPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZAPickerViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F45B77C9198ADEF200DE7AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45B77D2198ADEF200DE7AAD /* CoreGraphics.framework in Frameworks */,
+				F45B77D6198ADEF200DE7AAD /* CoreData.framework in Frameworks */,
+				F45B77D4198ADEF200DE7AAD /* UIKit.framework in Frameworks */,
+				F45B77D0198ADEF200DE7AAD /* Foundation.framework in Frameworks */,
+				3FADBBDB1EE14C4DBD1DCA28 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45B77E9198ADEF300DE7AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45B77EE198ADEF300DE7AAD /* XCTest.framework in Frameworks */,
+				F45B77F1198ADEF300DE7AAD /* CoreData.framework in Frameworks */,
+				F45B77F0198ADEF300DE7AAD /* UIKit.framework in Frameworks */,
+				F45B77EF198ADEF300DE7AAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F45B77C3198ADEF200DE7AAD = {
+			isa = PBXGroup;
+			children = (
+				F45B77D7198ADEF200DE7AAD /* quizApp */,
+				F45B77F4198ADEF300DE7AAD /* quizAppTests */,
+				F45B77CE198ADEF200DE7AAD /* Frameworks */,
+				F45B77CD198ADEF200DE7AAD /* Products */,
+				383A081F7CB044BFA2F67656 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		F45B77CD198ADEF200DE7AAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F45B77CC198ADEF200DE7AAD /* quizApp.app */,
+				F45B77EC198ADEF300DE7AAD /* quizAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F45B77CE198ADEF200DE7AAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F45B77CF198ADEF200DE7AAD /* Foundation.framework */,
+				F45B77D1198ADEF200DE7AAD /* CoreGraphics.framework */,
+				F45B77D3198ADEF200DE7AAD /* UIKit.framework */,
+				F45B77D5198ADEF200DE7AAD /* CoreData.framework */,
+				F45B77ED198ADEF300DE7AAD /* XCTest.framework */,
+				009F8C45F4B040ECB7A9C82A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F45B77D7198ADEF200DE7AAD /* quizApp */ = {
+			isa = PBXGroup;
+			children = (
+				F45B77E0198ADEF200DE7AAD /* QZAAppDelegate.h */,
+				F45B77E1198ADEF200DE7AAD /* QZAAppDelegate.m */,
+				F45B7804198ADF0700DE7AAD /* Storyboard.storyboard */,
+				F490D3CF198DE44C001BAF2C /* QZAQuestionAndAnswers.h */,
+				F490D3D0198DE44C001BAF2C /* QZAQuestionAndAnswers.m */,
+				F490D3D2198DE4C8001BAF2C /* QZAGenerateQandA.h */,
+				F490D3D3198DE4C8001BAF2C /* QZAGenerateQandA.m */,
+				F45B7806198ADFC400DE7AAD /* QZABasicQuizViewController.h */,
+				F45B7807198ADFC400DE7AAD /* QZABasicQuizViewController.m */,
+				F4C257A7198E476500368203 /* QZASelectCellsTableViewController.h */,
+				F4C257A8198E476500368203 /* QZASelectCellsTableViewController.m */,
+				F490D3CC198DE30B001BAF2C /* QZASwipeTableViewController.h */,
+				F490D3CD198DE30B001BAF2C /* QZASwipeTableViewController.m */,
+				F4C257AA198E55D200368203 /* QZAPickerViewController.h */,
+				F4C257AB198E55D200368203 /* QZAPickerViewController.m */,
+				F490D3D5198E1A85001BAF2C /* QZAAlertViewManager.h */,
+				F490D3D6198E1A85001BAF2C /* QZAAlertViewManager.m */,
+				F490D3D8198E2A69001BAF2C /* QZARewardsOptions.h */,
+				F490D3D9198E2A69001BAF2C /* QZARewardsOptions.m */,
+				F490D3DB198E2C2F001BAF2C /* QZADogeOutcomeViewController.h */,
+				F490D3DC198E2C2F001BAF2C /* QZADogeOutcomeViewController.m */,
+				F490D3E0198E3DFB001BAF2C /* QZAWebViewController.h */,
+				F490D3E1198E3DFB001BAF2C /* QZAWebViewController.m */,
+				F4C257A4198E437600368203 /* QZAFacebookViewController.h */,
+				F4C257A5198E437600368203 /* QZAFacebookViewController.m */,
+				F45B7809198AE1CC00DE7AAD /* QZACheckAnswer.h */,
+				F45B780A198AE1CC00DE7AAD /* QZACheckAnswer.m */,
+				F490D2A1198AEDAA001BAF2C /* apple.gif */,
+				F490D3DE198E2CFA001BAF2C /* doge.png */,
+				F45B77E6198ADEF200DE7AAD /* Images.xcassets */,
+				F45B77E3198ADEF200DE7AAD /* quizApp.xcdatamodeld */,
+				F45B77D8198ADEF200DE7AAD /* Supporting Files */,
+			);
+			path = quizApp;
+			sourceTree = "<group>";
+		};
+		F45B77D8198ADEF200DE7AAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F45B77D9198ADEF200DE7AAD /* quizApp-Info.plist */,
+				F45B77DA198ADEF200DE7AAD /* InfoPlist.strings */,
+				F45B77DD198ADEF200DE7AAD /* main.m */,
+				F45B77DF198ADEF200DE7AAD /* quizApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F45B77F4198ADEF300DE7AAD /* quizAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F45B77FA198ADEF300DE7AAD /* quizAppTests.m */,
+				F45B77F5198ADEF300DE7AAD /* Supporting Files */,
+			);
+			path = quizAppTests;
+			sourceTree = "<group>";
+		};
+		F45B77F5198ADEF300DE7AAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F45B77F6198ADEF300DE7AAD /* quizAppTests-Info.plist */,
+				F45B77F7198ADEF300DE7AAD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F45B77CB198ADEF200DE7AAD /* quizApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F45B77FE198ADEF300DE7AAD /* Build configuration list for PBXNativeTarget "quizApp" */;
+			buildPhases = (
+				5CED424B84254676A24E2A8C /* Check Pods Manifest.lock */,
+				F45B77C8198ADEF200DE7AAD /* Sources */,
+				F45B77C9198ADEF200DE7AAD /* Frameworks */,
+				F45B77CA198ADEF200DE7AAD /* Resources */,
+				C8C84B1FF5134E6BB8AD60AE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = quizApp;
+			productName = quizApp;
+			productReference = F45B77CC198ADEF200DE7AAD /* quizApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F45B77EB198ADEF300DE7AAD /* quizAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F45B7801198ADEF300DE7AAD /* Build configuration list for PBXNativeTarget "quizAppTests" */;
+			buildPhases = (
+				F45B77E8198ADEF300DE7AAD /* Sources */,
+				F45B77E9198ADEF300DE7AAD /* Frameworks */,
+				F45B77EA198ADEF300DE7AAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F45B77F3198ADEF300DE7AAD /* PBXTargetDependency */,
+			);
+			name = quizAppTests;
+			productName = quizAppTests;
+			productReference = F45B77EC198ADEF300DE7AAD /* quizAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F45B77C4198ADEF200DE7AAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = QZA;
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					F45B77EB198ADEF300DE7AAD = {
+						TestTargetID = F45B77CB198ADEF200DE7AAD;
+					};
+				};
+			};
+			buildConfigurationList = F45B77C7198ADEF200DE7AAD /* Build configuration list for PBXProject "quizApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F45B77C3198ADEF200DE7AAD;
+			productRefGroup = F45B77CD198ADEF200DE7AAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F45B77CB198ADEF200DE7AAD /* quizApp */,
+				F45B77EB198ADEF300DE7AAD /* quizAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F45B77CA198ADEF200DE7AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F490D2A2198AEDAA001BAF2C /* apple.gif in Resources */,
+				F490D3DF198E2CFA001BAF2C /* doge.png in Resources */,
+				F45B77DC198ADEF200DE7AAD /* InfoPlist.strings in Resources */,
+				F45B77E7198ADEF200DE7AAD /* Images.xcassets in Resources */,
+				F45B7805198ADF0700DE7AAD /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45B77EA198ADEF300DE7AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45B77F9198ADEF300DE7AAD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5CED424B84254676A24E2A8C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8C84B1FF5134E6BB8AD60AE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F45B77C8198ADEF200DE7AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C257A6198E437600368203 /* QZAFacebookViewController.m in Sources */,
+				F45B780B198AE1CC00DE7AAD /* QZACheckAnswer.m in Sources */,
+				F490D3DD198E2C2F001BAF2C /* QZADogeOutcomeViewController.m in Sources */,
+				F490D3D4198DE4C8001BAF2C /* QZAGenerateQandA.m in Sources */,
+				F45B77DE198ADEF200DE7AAD /* main.m in Sources */,
+				F45B7808198ADFC400DE7AAD /* QZABasicQuizViewController.m in Sources */,
+				F45B77E5198ADEF200DE7AAD /* quizApp.xcdatamodeld in Sources */,
+				F4C257AC198E55D200368203 /* QZAPickerViewController.m in Sources */,
+				F490D3DA198E2A69001BAF2C /* QZARewardsOptions.m in Sources */,
+				F490D3D1198DE44C001BAF2C /* QZAQuestionAndAnswers.m in Sources */,
+				F45B77E2198ADEF200DE7AAD /* QZAAppDelegate.m in Sources */,
+				F490D3D7198E1A85001BAF2C /* QZAAlertViewManager.m in Sources */,
+				F490D3E2198E3DFB001BAF2C /* QZAWebViewController.m in Sources */,
+				F4C257A9198E476500368203 /* QZASelectCellsTableViewController.m in Sources */,
+				F490D3CE198DE30B001BAF2C /* QZASwipeTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45B77E8198ADEF300DE7AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45B77FB198ADEF300DE7AAD /* quizAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F45B77F3198ADEF300DE7AAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F45B77CB198ADEF200DE7AAD /* quizApp */;
+			targetProxy = F45B77F2198ADEF300DE7AAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F45B77DA198ADEF200DE7AAD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F45B77DB198ADEF200DE7AAD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F45B77F7198ADEF300DE7AAD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F45B77F8198ADEF300DE7AAD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F45B77FC198ADEF300DE7AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F45B77FD198ADEF300DE7AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F45B77FF198ADEF300DE7AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 383A081F7CB044BFA2F67656 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "quizApp/quizApp-Prefix.pch";
+				INFOPLIST_FILE = "quizApp/quizApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F45B7800198ADEF300DE7AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 383A081F7CB044BFA2F67656 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "quizApp/quizApp-Prefix.pch";
+				INFOPLIST_FILE = "quizApp/quizApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F45B7802198ADEF300DE7AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/quizApp.app/quizApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "quizApp/quizApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "quizAppTests/quizAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F45B7803198ADEF300DE7AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/quizApp.app/quizApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "quizApp/quizApp-Prefix.pch";
+				INFOPLIST_FILE = "quizAppTests/quizAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F45B77C7198ADEF200DE7AAD /* Build configuration list for PBXProject "quizApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45B77FC198ADEF300DE7AAD /* Debug */,
+				F45B77FD198ADEF300DE7AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F45B77FE198ADEF300DE7AAD /* Build configuration list for PBXNativeTarget "quizApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45B77FF198ADEF300DE7AAD /* Debug */,
+				F45B7800198ADEF300DE7AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F45B7801198ADEF300DE7AAD /* Build configuration list for PBXNativeTarget "quizAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45B7802198ADEF300DE7AAD /* Debug */,
+				F45B7803198ADEF300DE7AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F45B77E3198ADEF200DE7AAD /* quizApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F45B77E4198ADEF200DE7AAD /* quizApp.xcdatamodel */,
+			);
+			currentVersion = F45B77E4198ADEF200DE7AAD /* quizApp.xcdatamodel */;
+			path = quizApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F45B77C4198ADEF200DE7AAD /* Project object */;
+}
