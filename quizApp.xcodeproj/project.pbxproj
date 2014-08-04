@@ -38,6 +38,7 @@
 		F4C257A6198E437600368203 /* QZAFacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C257A5198E437600368203 /* QZAFacebookViewController.m */; };
 		F4C257A9198E476500368203 /* QZASelectCellsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C257A8198E476500368203 /* QZASelectCellsTableViewController.m */; };
 		F4C257AC198E55D200368203 /* QZAPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C257AB198E55D200368203 /* QZAPickerViewController.m */; };
+		F4C257AF198FD79C00368203 /* QZADragRowsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C257AE198FD79C00368203 /* QZADragRowsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,8 @@
 		F4C257A8198E476500368203 /* QZASelectCellsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZASelectCellsTableViewController.m; sourceTree = "<group>"; };
 		F4C257AA198E55D200368203 /* QZAPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZAPickerViewController.h; sourceTree = "<group>"; };
 		F4C257AB198E55D200368203 /* QZAPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZAPickerViewController.m; sourceTree = "<group>"; };
+		F4C257AD198FD79C00368203 /* QZADragRowsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZADragRowsTableViewController.h; sourceTree = "<group>"; };
+		F4C257AE198FD79C00368203 /* QZADragRowsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZADragRowsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +181,8 @@
 				F490D3CD198DE30B001BAF2C /* QZASwipeTableViewController.m */,
 				F4C257AA198E55D200368203 /* QZAPickerViewController.h */,
 				F4C257AB198E55D200368203 /* QZAPickerViewController.m */,
+				F4C257AD198FD79C00368203 /* QZADragRowsTableViewController.h */,
+				F4C257AE198FD79C00368203 /* QZADragRowsTableViewController.m */,
 				F490D3D5198E1A85001BAF2C /* QZAAlertViewManager.h */,
 				F490D3D6198E1A85001BAF2C /* QZAAlertViewManager.m */,
 				F490D3D8198E2A69001BAF2C /* QZARewardsOptions.h */,
@@ -375,6 +380,7 @@
 				F490D3D7198E1A85001BAF2C /* QZAAlertViewManager.m in Sources */,
 				F490D3E2198E3DFB001BAF2C /* QZAWebViewController.m in Sources */,
 				F4C257A9198E476500368203 /* QZASelectCellsTableViewController.m in Sources */,
+				F4C257AF198FD79C00368203 /* QZADragRowsTableViewController.m in Sources */,
 				F490D3CE198DE30B001BAF2C /* QZASwipeTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
