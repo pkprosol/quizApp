@@ -34,16 +34,14 @@
     self.tableView.editing = YES;
         
     self.answerArray = @[@"- (void)sayHello {", @"     NSString *hello = @\"Hello!\";", @"     NSLog(@\"%@\", hello);", @"}"];
+    //self.answerArray = @[@"test1", @"test2", @"test3", @"test4"];
     
     self.currentArray = [NSMutableArray new];
     [self.currentArray addObjectsFromArray:self.answerArray];
     
-    for (NSInteger i = 0; i < 10; i++) {
-        NSInteger random = [self generateRandomNumberBetweenZeroAnd:3];
-        [self.currentArray exchangeObjectAtIndex:random withObjectAtIndex:0];
+    while ([self.currentArray isEqualToArray:self.answerArray]) {
+        [self randomizeArray];
     }
-    
-    NSLog(@"%@", self.currentArray);
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -52,11 +50,13 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (NSInteger)generateRandomNumberBetweenZeroAnd:(NSInteger)max
+- (void)randomizeArray
 {
-    NSInteger random = arc4random() % (max + 1);
+    for (NSInteger i = 0; i < 10; i++) {
+        NSInteger random = arc4random() % ([self.currentArray count]);
+        [self.currentArray exchangeObjectAtIndex:random withObjectAtIndex:0];
+    }
     
-    return random;
 }
 
 - (void)didReceiveMemoryWarning
@@ -132,14 +132,20 @@
     NSLog(@"Starting position %d:", startingPosition);
     NSLog(@"Ending position: %d:", endingPosition);
     
-    [self.currentArray exchangeObjectAtIndex:startingPosition withObjectAtIndex:endingPosition];
-
+    NSString *startingString = self.currentArray[startingPosition];
+    
+    if (startingPosition > endingPosition) {
+        [self.currentArray insertObject:startingString atIndex:endingPosition];
+        startingPosition++;
+        [self.currentArray removeObjectAtIndex:startingPosition];
+    } else if (startingPosition < endingPosition) {
+        [self.currentArray removeObjectAtIndex:startingPosition];
+        [self.currentArray insertObject:startingString atIndex:endingPosition];
+    }
+    
+    
     NSLog(@"Array: %@", self.currentArray);
-    
-    [self.tableView reloadData];
-    
-//    [self.currentArray insertObject:stringAtStartingPosition atIndex:endingPosition];
-//    [self.currentArray removeObjectAtIndex:startingPosition];
+
 }
 
 // Override to support conditional rearranging of the table view.
